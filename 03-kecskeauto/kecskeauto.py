@@ -20,7 +20,6 @@ for i in range(1000):
     if choose==2:
         v.append(v3)
 
-
 harmas=[1,2,3]
 
 nynv=0 #nyert, nem valtoztatott
@@ -53,4 +52,3 @@ print(f'nyert,valtoztatott: {nyv}')
 print(f'nyert,NEM valtoztatott: {nynv}')        
 print(f'veszitett,valtoztatott: {vv}')        
 print(f'veszitett,NEM valtoztatott: {vnv}')        
-    
