@@ -7,10 +7,12 @@ print("| |\  \  __/ (__\__ \   <  __/ | | | |_| | || (_) |")
 print("\_| \_/\___|\___|___/_|\_\___\_| |_/\__,_|\__\___/ ")
 
 v=[]
+
+# vagyazvan, hogy elore definialom a lehetseges listakat es azt generalom bele a nagylistaba
+''' 
 v1=[0,0,1]
 v2=[0,1,0]
 v3=[1,0,0]
-
 for i in range(1000):
     choose=randrange(3)
     if choose==0:
@@ -19,6 +21,15 @@ for i in range(1000):
         v.append(v2)
     if choose==2:
         v.append(v3)
+'''
+
+# vagyaz, hogy elore feltoltom nullakkal es a generalt indexet updatelem 1-esre (v2.0)
+lista=[0,0,0]
+for i in range(1000):
+    lista[randrange(3)]=1
+    v.append(lista)
+    lista=[0,0,0]
+
 
 harmas=[1,2,3]
 
