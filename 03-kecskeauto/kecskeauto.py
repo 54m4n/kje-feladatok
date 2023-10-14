@@ -1,5 +1,4 @@
 from random import randrange
-
 print(" _   __              _         ___        _        ")
 print("| | / /             | |       / _ \      | |       ")
 print("| |/ /  ___  ___ ___| | _____/ /_\ \_   _| |_ ___  ")
