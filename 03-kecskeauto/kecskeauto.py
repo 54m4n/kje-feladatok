@@ -30,7 +30,6 @@ for i in range(1000):
     v.append(lista)
     lista=[0,0,0]
 
-
 harmas=[1,2,3]
 
 nynv=0 #nyert, nem valtoztatott
