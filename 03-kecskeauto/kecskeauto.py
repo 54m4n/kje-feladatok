@@ -7,15 +7,19 @@ print("| |\  \  __/ (__\__ \   <  __/ | | | |_| | || (_) |")
 print("\_| \_/\___|\___|___/_|\_\___\_| |_/\__,_|\__\___/ ")
 
 v=[]
-lehetoseg=[0,1]
-akt=0
+v1=[0,0,1]
+v2=[0,1,0]
+v3=[1,0,0]
 
 for i in range(1000):
-    akt=randrange(len(lehetoseg))
-    tmp=lehetoseg[akt]
-    del lehetoseg[akt]
-    v.append([tmp,lehetoseg[0],randrange(2)])
-    lehetoseg=[0,1]
+    choose=randrange(3)
+    if choose==0:
+        v.append(v1)
+    if choose==1:
+        v.append(v2)
+    if choose==2:
+        v.append(v3)
+
 
 harmas=[1,2,3]
 
