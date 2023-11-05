@@ -1,5 +1,6 @@
 import math
 import time
+from turtle import *
 start = time.time()
 a=21712
 b=10533
@@ -70,11 +71,38 @@ print(f'{f} faktorialis [rekurzioval]: {fak(f)}')
 '''
 
 
+'''
+#--------------------------------------
+# koch
+def koch(h, sz):
+  if sz == 0:
+    forward(h)
+  else:
+    koch(h, sz-1)
+    left(60)
+    koch(h, sz-1)
+    right(120)
+    koch(h, sz-1)
+    left(60)
+    koch(h, sz-1)
+reset()
+koch(20,3)
+done()
 
+#--------------------------------------
+# spiral
+def spiral(h,sz):
+  if sz < 0:
+    left(90)
+  else:
+    forward(h)
+    left(90)
+    spiral(h+10,sz-0.5)
 
-
-
-
+reset()
+spiral(10,10)
+done()
+'''
 
 end = time.time()
 print(f"Time taken: {(end-start)*10**3:.03f}ms")
