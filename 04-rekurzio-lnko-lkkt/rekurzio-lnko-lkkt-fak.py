@@ -3,7 +3,7 @@ import time
 start = time.time()
 a=21712
 b=10533
-f=4
+f=40
 
 if a<=b:
     kisebb=a
@@ -12,7 +12,8 @@ else:
     kisebb=b
     nagyobb=a
 
-print(f'szamok: {a}, {b}')
+print(f'szamok [lnko/lkkt]: {a}, {b}')
+print(f'szam [fakt]: {f}')
 
 '''
 #--------------------------------------
@@ -31,7 +32,13 @@ for i in range(lkkt,nagyobb-1,-1):
         lkkt=i
 print(f'{nagyobb} es {kisebb} legkisebb kozos tobbszorose [rekurzio nelkul]: {lkkt}')        
 
-'''
+#--------------------------------------
+# faktorialis rekurzio nelkul
+fakt = 1
+for i in range(1, f+1):
+    fakt = fakt * i
+print(f'{f} faktorialis [rekurzio nelkul]: {fakt}')
+
 #--------------------------------------
 #lnko rekurzioval
 def lnko(a,b):
@@ -43,6 +50,7 @@ def lnko(a,b):
         ln = lnko(a-b, b)
     return ln
 print(f'{nagyobb} es {kisebb} legnagyobb kozos osztoja [rekurzioval]: {lnko(a,b)}')
+
 #--------------------------------------
 #lkkt rekurzioval
 def lkkt(a,b):
@@ -50,6 +58,7 @@ def lkkt(a,b):
     return lk
 print(f'{nagyobb} es {kisebb} legkisebb kozos tobbszorose [rekurzioval]: {"%.1d" % lkkt(a,b)}')        
 
+#--------------------------------------
 # faktorialis rekurzioval
 def fak(f):
     if f==0:
@@ -58,6 +67,11 @@ def fak(f):
         return(fak(f-1)*f)
 
 print(f'{f} faktorialis [rekurzioval]: {fak(f)}')
+'''
+
+
+
+
 
 
 
