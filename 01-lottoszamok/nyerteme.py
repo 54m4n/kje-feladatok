@@ -5,7 +5,7 @@ f=open(f'{path}{os.sep}lottoszamok.txt','r')
 lines=f.readlines()
 f.close()
 
-szamok=[]
+szamok=[] 
 ujlista=[]
 
 
