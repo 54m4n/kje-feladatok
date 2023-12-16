@@ -2,9 +2,9 @@ import math
 import time
 from turtle import *
 start = time.time()
-a=21712
-b=10533
-f=40
+a=18900
+b=2115
+f=8
 
 if a<=b:
     kisebb=a
@@ -24,22 +24,8 @@ for i in range(1,kisebb+1):
     if nagyobb%i==0 and kisebb%i==0:
         lnko=i
 print(f'{nagyobb} es {kisebb} legnagyobb kozos osztoja [rekurzio nelkul]: {lnko}')
-
-#--------------------------------------
-#lkkt rekurzio nelkul
-lkkt=a*b
-for i in range(lkkt,nagyobb-1,-1):
-    if (i%nagyobb==0 and i%kisebb==0):
-        lkkt=i
-print(f'{nagyobb} es {kisebb} legkisebb kozos tobbszorose [rekurzio nelkul]: {lkkt}')        
-
-#--------------------------------------
-# faktorialis rekurzio nelkul
-fakt = 1
-for i in range(1, f+1):
-    fakt = fakt * i
-print(f'{f} faktorialis [rekurzio nelkul]: {fakt}')
-
+'''
+'''
 #--------------------------------------
 #lnko rekurzioval
 def lnko(a,b):
@@ -51,14 +37,36 @@ def lnko(a,b):
         ln = lnko(a-b, b)
     return ln
 print(f'{nagyobb} es {kisebb} legnagyobb kozos osztoja [rekurzioval]: {lnko(a,b)}')
+'''
 
+'''
+#--------------------------------------
+#lkkt rekurzio nelkul
+lkkt=a*b
+for i in range(lkkt,nagyobb-1,-1):
+    if (i%nagyobb==0 and i%kisebb==0):
+        lkkt=i
+print(f'{nagyobb} es {kisebb} legkisebb kozos tobbszorose [rekurzio nelkul]: {lkkt}')        
+'''
+
+'''
 #--------------------------------------
 #lkkt rekurzioval
 def lkkt(a,b):
     lk=a*b / lnko(a,b)
     return lk
 print(f'{nagyobb} es {kisebb} legkisebb kozos tobbszorose [rekurzioval]: {"%.1d" % lkkt(a,b)}')        
+'''
 
+'''
+#--------------------------------------
+# faktorialis rekurzio nelkul
+fakt = 1
+for i in range(1, f+1):
+    fakt = fakt * i
+print(f'{f} faktorialis [rekurzio nelkul]: {fakt}')
+'''
+'''
 #--------------------------------------
 # faktorialis rekurzioval
 def fak(f):
@@ -69,7 +77,6 @@ def fak(f):
 
 print(f'{f} faktorialis [rekurzioval]: {fak(f)}')
 '''
-
 
 '''
 #--------------------------------------
@@ -86,9 +93,11 @@ def koch(h, sz):
     left(60)
     koch(h, sz-1)
 reset()
-koch(20,3)
+koch(20,40)
 done()
+'''
 
+'''
 #--------------------------------------
 # spiral
 def spiral(h,sz):
@@ -103,6 +112,7 @@ reset()
 spiral(10,10)
 done()
 '''
+
 
 end = time.time()
 print(f"Time taken: {(end-start)*10**3:.03f}ms")
