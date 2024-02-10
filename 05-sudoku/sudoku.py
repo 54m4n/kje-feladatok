@@ -1,18 +1,11 @@
 import os
 
+
+'''Global variables'''
 path=os.path.dirname(__file__)
-f=open(f'{path}{os.sep}src{os.sep}orig.txt')
 numz=[]
-for l in f:
-    numz.append(l.split())
-f.close()
-    
 
-for i in range(len(numz)):
-    for j in range(9):
-        print(f'{numz[i][j]}',end=' ')    
-    print()
-
+'''Difficulty/map selector'''
 def cenzor(c):
     if c==1:
         print("easy")
@@ -24,6 +17,28 @@ def cenzor(c):
         print("unsolvable")
     return
 
-cenzor(3)
+'''Map loading'''
+def fileRead():
+    f=open(f'{path}{os.sep}src{os.sep}orig.txt')
+    
+    for l in f:
+        numz.append(l.split())
+    f.close()
 
 
+'''Drawing the (g)ui'''
+def drawGUI():
+    for i in range(len(numz)):
+        for j in range(9):
+            print(f'{numz[i][j]}',end=' ')    
+        print()
+
+'''Main function that handles the game states and flow'''
+def main():
+    fileRead()
+    drawGUI()
+    cenzor(1)
+
+'''Python convention for script starting (making sure this is the main script that gets executed(?))'''
+if __name__ == "__main__":
+    main()
