@@ -10,11 +10,8 @@ f.close()
 
 for i in range(len(numz)):
     for j in range(9):
-        print(f'{numz[i][j]}',end=' ')
-        if j==2 or j==5:
-            print("|",end=' ')
-    
-    print('\n---------------------')
+        print(f'{numz[i][j]}',end=' ')    
+    print()
 
 def cenzor(c):
     if c==1:
