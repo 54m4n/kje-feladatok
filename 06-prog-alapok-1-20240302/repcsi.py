@@ -44,4 +44,4 @@ for i in range(len(part)):
     except:
         IndexError
 print(part)
-print(balpart,jobbpart,max)
+print(f'legszelesebb sziget bal es jobb partja: {balpart},{jobbpart}')
