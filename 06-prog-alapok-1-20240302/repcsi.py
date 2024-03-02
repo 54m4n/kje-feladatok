@@ -74,3 +74,4 @@ for i in range(len(measure)):
 print('03:')
 print(f'a legmagasabb csucs ever: {max}')
 
+print(part)
