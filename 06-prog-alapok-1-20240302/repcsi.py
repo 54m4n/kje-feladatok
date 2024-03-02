@@ -29,13 +29,19 @@ f.close()
 #01.
 #Készíts programot, amely meghatározza a legszélesebb sziget bal-, illetve jobboldali partját!
 #komment: sziget akkor van, ha a ket oldala 0. ezek kozul kell a maxot kivalasztani
-max=0
-count=0
+
+part=[]
 for i in range(len(measure)):
-    if measure[i]!=0:
-        count=count+1
-    else:
-        count=0
-    if count>=max:
-        max=count
-print(f'legszelesebb sziget: {max}')
+    if measure[i]==0:
+        part.append(i)
+max=0
+for i in range(len(part)):
+    try:
+        if part[i+1]-part[i]>=max:
+            max=part[i+1]-part[i]
+            balpart=part[i]
+            jobbpart=part[i+1]
+    except:
+        IndexError
+print(part)
+print(balpart,jobbpart,max)
