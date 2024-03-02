@@ -43,5 +43,34 @@ for i in range(len(part)):
             jobbpart=part[i+1]
     except:
         IndexError
-print(part)
-print(f'legszelesebb sziget bal es jobb partja: {balpart},{jobbpart}')
+print('01:')
+print(f'legszelesebb sziget bal es jobb partja: {balpart} es {jobbpart}')
+
+#02.
+#Készíts programot, amely meghatározza a legmagasabb hegycsúcsot tartalmazó sziget bal-, illetve jobboldali partját!
+#mivel a szigeteink koordinatai mar megvannak, a koztes allapotot vizsgalom le max-ra
+
+max=0
+
+for  i in range(len(part)):
+    try:
+        for j in range(part[i+1]-part[i]):
+            if measure[part[i]+j]>=max:
+                max=measure[part[i]+j]
+                bal=part[i]
+                jobb=part[i+1]
+    except:
+        IndexError
+print('02:')
+print(f'legmagasabb hegycsucsot tartalmazo sziget bal es jobb partja: {bal}, {jobb}')
+
+#03.
+#Készíts programot, amely meghatározza a legmagasabb csúcsot, ami valamelyik földrészen található!
+#lenyegeben a legmagasabb csucsot keressuk, mindegy, hogy sziget vagy nemsziget csak ne tenger legyen
+max=0
+for i in range(len(measure)):
+    if measure[i]>=max:
+        max=measure[i]
+print('03:')
+print(f'a legmagasabb csucs ever: {max}')
+
