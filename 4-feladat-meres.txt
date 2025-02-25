@@ -2,7 +2,7 @@ Feladat:
 
 Egy hangmero allomast uzemeltetunk egy forgalmas utszakaszban.
 A mereseket percenkent vegezzuk ejfeltol ejfelig 24 oran keresztul.
-Minden sor azt jelenti, hany decibel a hangerosseg a mereskor.
+Minden ertek azt jelenti, hany decibel a hangerosseg a mereskor.
 
 1. Ird ki, hogy hany meres tortent.
 2. Hanyadig meresnel romlott el a mero allomas?
@@ -11,4 +11,4 @@ Minden sor azt jelenti, hany decibel a hangerosseg a mereskor.
 5. Ird ki a hangero merteket ugy, hogy annyi "|" karakter legyen egy sorban, amennyi az adott mert ertek.
 6. Ird ki a mert ertekeket perc szerint. Az indulo ertek: 00:00.
 	pl.:	00:00	|||||||||||||||||||||||||||||||||||||||||||||||||
-		00:01	|||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+			00:01	|||||||||||||||||||||||||||||||||||||||||||||||||||||||||
