@@ -9,6 +9,6 @@ Minden ertek azt jelenti, hany decibel a hangerosseg a mereskor.
 3. Melyik a leghangosabb mert ertek, es melyik a leghalkabb?
 4. Mi az atlag hangero?
 5. Ird ki a hangero merteket ugy, hogy annyi "|" karakter legyen egy sorban, amennyi az adott mert ertek.
-6. Ird ki a mert ertekeket perc szerint. Az indulo ertek: 00:00.
-	pl.:	00:00	|||||||||||||||||||||||||||||||||||||||||||||||||
-		00:01	|||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+6. Ird ki a mert ertekeket perc szerint. Az indulo ertek: 0 0
+	pl.:	0 0	|||||||||||||||||||||||||||||||||||||||||||||||||
+		0 1	|||||||||||||||||||||||||||||||||||||||||||||||||||||||||
